@@ -27,7 +27,7 @@
                     android:id                  ="@+id/drawer_button"
                     android:layout_width        ="50dp"
                     android:layout_height       ="match_parent"
-                    android:src                 ="@drawable/ic_menu"
+                    android:src                 ="@drawable/menu"
                     android:background          ="@android:color/transparent"
                     android:contentDescription  ="@null"/>
 
