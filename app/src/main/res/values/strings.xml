@@ -2,4 +2,10 @@
     <string name="app_name">PartTimeJob</string>
     <string name="email">E-mail</string>
     <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="repeat_password">Re-pasword</string>
+    <string name="sign_up">Sign up</string>
 </resources>
