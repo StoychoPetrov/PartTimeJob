@@ -1,4 +1,4 @@
-package eu.mobile.parttimejob;
+package eu.mobile.parttimejob.activities;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -26,6 +26,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import eu.mobile.parttimejob.R;
 import eu.mobile.parttimejob.adapters.DrawerListAdapter;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, DrawerLayout.DrawerListener, DrawerListAdapter.OnClickViewListener{

@@ -1,10 +1,18 @@
-package eu.mobile.parttimejob;
+package eu.mobile.parttimejob.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import eu.mobile.parttimejob.R;
+import eu.mobile.parttimejob.httpConnections.HttpConnection;
+import eu.mobile.parttimejob.httpConnections.HttpRequests;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -40,8 +48,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startSignUpActivity();
                 break;
             case R.id.log_in_button:
-                startMainActivity();
+                sendLogin();
+//                startMainActivity();
                 break;
+        }
+    }
+
+    private void sendLogin(){
+        try {
+            URL loginUrl = HttpRequests.getLoginUrl("test","0000");
+            HttpConnection httpConnection = new HttpConnection(this);
+            httpConnection.execute(loginUrl);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
         }
     }
 

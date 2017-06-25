@@ -5,7 +5,7 @@
     android:orientation     ="vertical"
     android:layout_width    ="match_parent"
     android:layout_height   ="match_parent"
-    tools:context           ="eu.mobile.parttimejob.RegisterActivity"
+    tools:context           ="eu.mobile.parttimejob.activities.RegisterActivity"
     android:layout_margin   ="20dp">
 
 
